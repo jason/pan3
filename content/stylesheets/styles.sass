@@ -1,0 +1,98 @@
+@import _base
+
+#bg-bunny
+  :background url(/images/bg_bunny_home.jpg) no-repeat
+  :z-index -1
+  :position absolute
+#header
+  +box-wrapper
+  :max-height 68px
+  :width 800px
+#pandora_logo
+  height: 9px
+  float: right
+#energizer_forum_logo
+  :margin-top 30px
+  :margin-left 10px
+  :height 32px
+    
+#nav_main
+  +box-wrapper
+  :float left
+  :max-width 480px
+  :width 480px
+  :height 32px
+  :max-height 32px
+  :padding-top 7px
+  ul
+    :margin-top 5px
+    :background url(/images/nav_bar.gif) no-repeat
+    :float left
+    :position relative
+  li
+    list-style: none
+    :float left
+  li, a
+    :display block
+    :padding 0px
+    :height 12px
+
+
+!buttonshift = 88px
+#categories_button
+  +button-position(0)
+#bands_button
+  +button-position(!buttonshift)
+#latestposts_button
+  +button-position(!buttonshift * 2)
+#register_button
+  +button-position(!buttonshift * 3)
+#faq_button
+  +button-position(!buttonshift * 4)
+
+#energizer_radio
+  +box-wrapper
+  :float left
+  :width 300px
+  :max-height 33px
+  :height 32px
+  :max-width 300px
+  img
+    :margin 10px
+
+body
+  :width 840px
+  font-family: Arial, Verdana, Helvetica, Times, "Times New Roman", sans-serif
+  background: url(/images/background.gif) repeat
+  :padding-left 10px
+  :padding-top 10px
+p 
+  :font-size 70%
+
+#page_body
+#forum_categories
+  :float left
+  +box-wrapper
+  :width 486px
+#features
+  :float left
+  :width 310px
+  h3
+    :font-size 85%
+
+  img
+    :float left
+    :padding-right 5px
+  #fcategory
+    +feature-wrapper
+  #fartist
+    +feature-wrapper
+  #fpost
+    +feature-wrapper
+  #fmember
+    +feature-wrapper
+#footer
+  +box-wrapper
+  :width 800px
+  :float left
+

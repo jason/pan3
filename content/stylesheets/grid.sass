@@ -1,0 +1,22 @@
+//  The following locks in our grid coordinates
+@import grid-coordinates/grid
+
+!grid_columns ||= 10
+!grid_pixels ||= 80px
+!grid_gutter_width ||= 0px
+
+#header, #page, #footer
+  +grid-container
+
+#header
+  +grid(10)
+#nav_main
+  +grid(6)
+#energizer_radio
+  +grid(4)  
+#page_body
+  +grid(8)
+  &.wide
+    +grid(10)
+  
+//#page_sidebar

@@ -1,0 +1,41 @@
+!!!
+%html
+  %head
+    %title
+      = "Nanoc Template - #{@item[:title]}"
+    %link{ :href => "stylesheets/styles.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
+  %body
+    #bg-bunny
+    #header
+      #pandora_logo 
+        %img{:src => "/images/pandora.gif"}
+      %h1#energizer_forum_logo
+        %img{:src => "/images/energizer-forum.gif"}
+    #nav_main
+      %ul
+        %li#categories_button
+          =link_to "", "categories"
+        %li#bands_button
+          =link_to "", "bands"
+        %li#latestposts_button
+          =link_to "", "latestposts"
+        %li#register_button
+          =link_to "", "register"
+        %li#faq_button
+          =link_to "", "faq"
+    #energizer_radio
+      %img{:src => "/images/energizer-radio-box.gif"}
+    #page_body
+      = yield
+    #footer
+      %p 
+        &copy; 2009 Pandora Media, Inc., All Rights Reserved
+        =link_to "Home", "/"
+        | 
+        =link_to "Privacy Policy", "./static.php?page=privacy"
+        |
+        =link_to "Terms of Use", "./static.php?page=tos"
+        |
+        =link_to "Pandora.com", "http://www.pandora.com"
+        %br
+        &copy; 2009 Energizer. Energizer, Energizer Bunny design, card graphics and shape, and other marks are trademarks of Energizer
